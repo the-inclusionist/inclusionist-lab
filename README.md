@@ -11,7 +11,7 @@ Multi-page [Vite](https://vite.dev) + TypeScript app. Shared code comes from the
 
 | Page | What | Status |
 |---|---|---|
-| [`/tts/`](tts/) | **TTS Lab** — compare speech engines: fallback (eSpeak NG + Web Speech), sherpa (Piper + Kokoro), WebGPU | Section 1 (fallbacks) done |
+| [`/tts/`](tts/) | **TTS Lab** — compare speech engines: fallback (eSpeak NG + Web Speech), sherpa (Piper + Kokoro fp32), WebGPU (Kokoro fp32/fp16) | 3 sections done (DI over `@jrocha-io/*`) |
 | `/libras/` | Libras avatar / sign recognition | planned |
 | `/vision/` | Face/eye tracking (MediaPipe) | planned |
 
