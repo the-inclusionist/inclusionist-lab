@@ -1,0 +1,5 @@
+# Cloudflare Pages headers — scoped to THIS deploy (the labs. domain) only, never the game.
+# Cross-origin isolation so the sherpa-onnx-wasm multi-thread build gets SharedArrayBuffer.
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless

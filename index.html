@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inclusionist Lab</title>
+    <style>
+      :root { color-scheme: dark; --bg: #14161a; --panel: #1e2128; --line: #30343d; --ink: #e8eaed; --mut: #9aa0aa; --acc: #5aa0ff; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font: 16px/1.6 system-ui, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--ink); padding: 40px 20px; }
+      main { max-width: 60rem; margin: 0 auto; }
+      h1 { font-size: 26px; margin: 0 0 6px; }
+      .sub { color: var(--mut); margin: 0 0 28px; max-width: 70ch; }
+      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+      a.card { display: block; text-decoration: none; color: inherit; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; transition: border-color .15s, transform .15s; }
+      a.card:hover { border-color: var(--acc); transform: translateY(-2px); }
+      a.card h2 { font-size: 17px; margin: 0 0 6px; }
+      a.card p { color: var(--mut); margin: 0; font-size: 14px; }
+      a.card.soon { opacity: .5; pointer-events: none; }
+      .tag { display: inline-block; font-size: 12px; color: var(--acc); border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; margin-left: 8px; vertical-align: middle; }
+      footer { color: var(--mut); font-size: 13px; margin-top: 36px; }
+      footer a { color: var(--acc); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Inclusionist Lab</h1>
+      <p class="sub">
+        Bancada de experimentos com bibliotecas e modelos ligados a <b>acessibilidade e inclusão</b> — para o
+        jogo educativo <a href="https://github.com/jrocha-io/the-inclusionist" style="color:var(--acc)">The Inclusionist</a>
+        e projetos futuros. Cada experimento é uma subpágina. Nenhum modelo é removido: mesmo os ruins servem de comparação.
+      </p>
+      <div class="grid">
+        <a class="card" href="/tts/">
+          <h2>TTS Lab <span class="tag">pronto: Seção 1</span></h2>
+          <p>Comparação de motores de síntese de fala — fallback (eSpeak NG + Web Speech), sherpa (Piper + Kokoro) e WebGPU.</p>
+        </a>
+        <a class="card soon">
+          <h2>Libras <span class="tag">em breve</span></h2>
+          <p>Avatar de língua de sinais (motor zdog) e reconhecimento — a definir.</p>
+        </a>
+        <a class="card soon">
+          <h2>Visão / MediaPipe <span class="tag">em breve</span></h2>
+          <p>Rastreio de rosto e olhos para controle acessível — a definir.</p>
+        </a>
+      </div>
+      <footer>
+        Código: <a href="https://github.com/jrocha-io/inclusionist-lab">inclusionist-lab</a> ·
+        pacotes compartilhados <a href="https://github.com/jrocha-io/inclusionist-commons">@jrocha-io/*</a> · GPL-3.0.
+      </footer>
+    </main>
+  </body>
+</html>
