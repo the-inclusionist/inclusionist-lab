@@ -5,6 +5,7 @@ import { WebSpeechEngine, platformSpeechApi, type Lang, type TtsEngine } from '@
 import { DomLogger, type Logger } from '@jrocha-io/logging';
 import { createTaskTable } from './ui/task-table.js';
 import { createESpeakEngine } from './engines/espeak.js';
+import { buildSherpaSection } from './ui/sherpa-section.js';
 import './style.css';
 
 const LANGS: readonly Lang[] = ['pt', 'en', 'es'];
@@ -30,12 +31,13 @@ function boot(root: HTMLElement): void {
   const logEl = el('pre', { id: 'log' });
   const logger: Logger = new DomLogger(logEl);
 
-  const section = buildFallbackSection(logger, getRate);
+  const section1 = buildFallbackSection(logger, getRate);
+  const section2 = buildSherpaSection(logger, getRate);
 
   const rateBar = el('div', { className: 'bar' });
   rateBar.append(el('label', { textContent: 'Velocidade ' }), rate, rateVal);
 
-  root.append(h1, sub, section, rateBar, el('h2', { textContent: 'Log' }), logEl);
+  root.append(h1, sub, rateBar, section1, section2, el('h2', { textContent: 'Log' }), logEl);
 }
 
 function buildFallbackSection(logger: Logger, getRate: () => number): HTMLElement {

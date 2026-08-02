@@ -13,9 +13,10 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@jrocha-io/tts": "^0.3.0",
+    "@jrocha-io/tts": "^0.4.0",
     "@jrocha-io/audio": "^0.1.0",
     "@jrocha-io/logging": "^0.1.0",
+    "@jrocha-io/model-fetch": "^0.1.0",
     "mespeak": "2.0.2"
   },
   "devDependencies": {

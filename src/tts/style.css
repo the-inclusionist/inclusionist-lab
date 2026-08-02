@@ -12,8 +12,14 @@ h2.sec { font-size: 15px; margin: 0 0 10px; color: var(--ink); text-transform: n
 .sub { color: var(--mut); margin: 0 0 14px; max-width: 80ch; }
 .warn { color: var(--warn); }
 section.lab { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 0 0 18px; background: #171a1f; }
-.bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 10px 0; }
+.bar { display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap; margin: 10px 0; }
 .toggle { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.voices { display: flex; flex-direction: column; gap: 6px; }
+.voices select { min-width: 210px; }
+.ctrls { display: flex; flex-direction: column; gap: 8px; }
+.dlwrap { display: flex; flex-direction: column; gap: 6px; }
+.dl { width: 220px; min-height: 88px; background: #0d0f12; color: var(--mut); border: 1px solid var(--line); border-radius: 8px; padding: 6px; font: 12px/1.4 ui-monospace, Consolas, monospace; resize: vertical; }
+button.primary { border-color: var(--acc); background: #22304a; }
 select, button, input[type=range] { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 14px; }
 button { cursor: pointer; }
 button:disabled { opacity: .45; cursor: not-allowed; }
