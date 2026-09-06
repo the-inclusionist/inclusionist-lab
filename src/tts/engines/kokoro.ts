@@ -1,8 +1,8 @@
-// Wires the concrete kokoro-js (onnxruntime-web) into @jrocha-io/tts's KokoroWebGpuEngine — NO CDN, bundled
+// Wires the concrete kokoro-js (onnxruntime-web) into @the-inclusionist/tts's KokoroWebGpuEngine — NO CDN, bundled
 // by Vite (dynamic import → lazy chunk). Model weights stream from HuggingFace on first load and cache.
 
-import { KokoroWebGpuEngine, type KokoroTts, type KokoroDtype, type KokoroDevice } from '@jrocha-io/tts';
-import { WebAudioPlayer } from '@jrocha-io/audio';
+import { KokoroWebGpuEngine, type KokoroTts, type KokoroDtype, type KokoroDevice } from '@the-inclusionist/tts';
+import { WebAudioPlayer } from '@the-inclusionist/audio';
 
 interface KokoroModule {
   KokoroTTS: { from_pretrained(model: string, opts: { dtype: string; device: string }): Promise<KokoroTts> };

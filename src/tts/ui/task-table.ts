@@ -1,5 +1,5 @@
-import type { Lang, TtsEngine } from '@jrocha-io/tts';
-import type { Logger } from '@jrocha-io/logging';
+import type { Lang, TtsEngine } from '@the-inclusionist/tts';
+import type { Logger } from '@the-inclusionist/logging';
 import { SAMPLES, TASKS } from '../content/samples.js';
 
 export interface TaskTableDeps {

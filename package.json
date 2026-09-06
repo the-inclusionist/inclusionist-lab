@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "description": "Hub of accessibility/inclusion experiments (TTS and more) for The Inclusionist — one subpage per lab.",
-  "license": "GPL-3.0-or-later",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
@@ -13,10 +13,10 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@jrocha-io/tts": "^0.5.0",
-    "@jrocha-io/audio": "^0.1.0",
-    "@jrocha-io/logging": "^0.1.0",
-    "@jrocha-io/model-fetch": "^0.1.0",
+    "@the-inclusionist/tts": "^0.5.0",
+    "@the-inclusionist/audio": "^0.1.0",
+    "@the-inclusionist/logging": "^0.1.0",
+    "@the-inclusionist/model-fetch": "^0.1.0",
     "kokoro-js": "1.2.1",
     "mespeak": "2.0.2"
   },

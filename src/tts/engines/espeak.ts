@@ -6,7 +6,7 @@
 //   npx esbuild node_modules/mespeak/src/index.js --bundle --format=iife --global-name=meSpeakLib \
 //     --outfile=public/vendor/mespeak.iife.js
 
-import { MeSpeakEngine, type MeSpeakApi } from '@jrocha-io/tts';
+import { MeSpeakEngine, type MeSpeakApi } from '@the-inclusionist/tts';
 
 let cached: MeSpeakApi | null = null;
 

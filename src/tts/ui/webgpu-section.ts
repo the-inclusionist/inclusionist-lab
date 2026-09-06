@@ -1,5 +1,5 @@
-import { langOf, type KokoroDevice, type KokoroDtype, type KokoroWebGpuEngine, type TtsEngine } from '@jrocha-io/tts';
-import type { Logger } from '@jrocha-io/logging';
+import { langOf, type KokoroDevice, type KokoroDtype, type KokoroWebGpuEngine, type TtsEngine } from '@the-inclusionist/tts';
+import type { Logger } from '@the-inclusionist/logging';
 import { createKokoroEngine } from '../engines/kokoro.js';
 import { createTaskTable } from './task-table.js';
 

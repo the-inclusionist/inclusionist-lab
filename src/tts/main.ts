@@ -1,8 +1,8 @@
 // Composition root — instantiate the concrete adapters and inject them into the section controllers.
 // Stage 3a: Section 1 (fallback) wired with the WebSpeechEngine. eSpeak, sherpa and WebGPU land next.
 
-import { WebSpeechEngine, platformSpeechApi, type Lang, type TtsEngine } from '@jrocha-io/tts';
-import { DomLogger, type Logger } from '@jrocha-io/logging';
+import { WebSpeechEngine, platformSpeechApi, type Lang, type TtsEngine } from '@the-inclusionist/tts';
+import { DomLogger, type Logger } from '@the-inclusionist/logging';
 import { createTaskTable } from './ui/task-table.js';
 import { createESpeakEngine } from './engines/espeak.js';
 import { buildSherpaSection } from './ui/sherpa-section.js';
@@ -20,7 +20,7 @@ function boot(root: HTMLElement): void {
 
   const h1 = el('h1');
   h1.innerHTML = 'TTS Lab <span class="mut">— fallback · sherpa · WebGPU</span>';
-  const sub = el('p', { className: 'sub', textContent: 'Bancada de comparação de TTS. Rodada 3a: Seção 1 (fallback) ligada por injeção de dependência sobre @jrocha-io/*.' });
+  const sub = el('p', { className: 'sub', textContent: 'Bancada de comparação de TTS. Rodada 3a: Seção 1 (fallback) ligada por injeção de dependência sobre @the-inclusionist/*.' });
 
   // Shared speed slider (all sections read it).
   const rate = el('input', { type: 'range', min: '0.5', max: '1.3', step: '0.05', value: '0.9' });

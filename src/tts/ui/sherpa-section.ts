@@ -6,8 +6,8 @@ import {
   type Lang,
   type SherpaEngine,
   type TtsEngine,
-} from '@jrocha-io/tts';
-import type { Logger } from '@jrocha-io/logging';
+} from '@the-inclusionist/tts';
+import type { Logger } from '@the-inclusionist/logging';
 import { createSherpaEngine } from '../engines/sherpa.js';
 import { createTaskTable } from './task-table.js';
 

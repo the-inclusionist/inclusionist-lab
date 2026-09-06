@@ -1,17 +1,17 @@
 # Inclusionist Lab
 
 A hub of experiments for **accessibility/inclusion** libraries and models, backing the educational game
-[The Inclusionist](https://github.com/jrocha-io/the-inclusionist). One **subpage per lab**; the landing page
+[The Inclusionist](https://github.com/the-inclusionist/the-inclusionist-engine). One **subpage per lab**; the landing page
 (`/`) links to each. Nothing is removed — even weak models stay for comparison.
 
 Multi-page [Vite](https://vite.dev) + TypeScript app. Shared code comes from the versioned
-[`@jrocha-io/*`](https://github.com/jrocha-io/inclusionist-commons) packages. Deploys to Cloudflare Pages.
+[`@the-inclusionist/*`](https://github.com/the-inclusionist/inclusionist-commons) packages. Deploys to Cloudflare Pages.
 
 ## Labs
 
 | Page | What | Status |
 |---|---|---|
-| [`/tts/`](tts/) | **TTS Lab** — compare speech engines: fallback (eSpeak NG + Web Speech), sherpa (Piper + Kokoro fp32), WebGPU (Kokoro fp32/fp16) | 3 sections done (DI over `@jrocha-io/*`) |
+| [`/tts/`](tts/) | **TTS Lab** — compare speech engines: fallback (eSpeak NG + Web Speech), sherpa (Piper + Kokoro fp32), WebGPU (Kokoro fp32/fp16) | 3 sections done (DI over `@the-inclusionist/*`) |
 | `/libras/` | Libras avatar / sign recognition | planned |
 | `/vision/` | Face/eye tracking (MediaPipe) | planned |
 
@@ -43,4 +43,4 @@ no UTF-8 bundler can inline). Regenerate with:
 npx esbuild node_modules/mespeak/src/index.js --bundle --format=iife --global-name=meSpeakLib --outfile=public/vendor/mespeak.iife.js
 ```
 
-License: GPL-3.0-or-later.
+License: AGPL-3.0-or-later.

@@ -1,12 +1,12 @@
-// Wires the concrete sherpa-onnx-wasm runtime into @jrocha-io/tts's SherpaEngine. The ~18MB engine assets
+// Wires the concrete sherpa-onnx-wasm runtime into @the-inclusionist/tts's SherpaEngine. The ~18MB engine assets
 // (the .js loaders + .wasm + .data with espeak-ng-data) are same-origin PUBLIC assets under
 // public/sherpa-wasm/<engine>/ — build them with the recipe in reference/sherpa-wasm/README.md. NO CDN.
 // The multi-thread build (`tts`) needs COOP/COEP (set by the dev server + public/_headers).
 
-import { SherpaEngine, type SherpaRuntime } from '@jrocha-io/tts';
-import { HttpModelFetcher } from '@jrocha-io/model-fetch';
-import { WebAudioPlayer } from '@jrocha-io/audio';
-import type { Logger } from '@jrocha-io/logging';
+import { SherpaEngine, type SherpaRuntime } from '@the-inclusionist/tts';
+import { HttpModelFetcher } from '@the-inclusionist/model-fetch';
+import { WebAudioPlayer } from '@the-inclusionist/audio';
+import type { Logger } from '@the-inclusionist/logging';
 
 interface SherpaModule {
   FS: { writeFile(path: string, data: Uint8Array): void };

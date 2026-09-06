@@ -1,4 +1,4 @@
-import type { Lang } from '@jrocha-io/tts';
+import type { Lang } from '@the-inclusionist/tts';
 
 /** The five literacy drills the lab benchmarks, per language. */
 export interface Task {

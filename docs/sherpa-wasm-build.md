@@ -1,4 +1,4 @@
-<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
 # sherpa-wasm — motor WASM local para o `sherpa-lab.html`
 
 Roda VITS/Piper no navegador via **sherpa-onnx-wasm**. Só o **motor** é gerado por você (o build oficial exige um modelo
