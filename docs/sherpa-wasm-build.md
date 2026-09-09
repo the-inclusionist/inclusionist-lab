@@ -3,7 +3,7 @@
 
 Roda VITS/Piper no navegador via **sherpa-onnx-wasm**. Só o **motor** é gerado por você (o build oficial exige um modelo
 em `assets/` — não há bundle público reaproveitável); as **vozes** o `sherpa-lab.html` baixa **sob demanda do HF do
-csukuangfj** e escreve no FS virtual em runtime (`FS.writeFile`). Decisão: **[ADR-0022](../../2-Architecture/adr/ADR-0022-tts-sherpa-onnx-wasm-runtime.yaml)**.
+csukuangfj** e escreve no FS virtual em runtime (`FS.writeFile`). Decisão: **[ADR-0022](https://github.com/the-inclusionist/the-inclusionist-docs/blob/main/docs/2-Architecture/adr/ADR-0022-tts-sherpa-onnx-wasm-runtime.yaml)**.
 
 Só o `.gitignore` + este README são versionados; a pasta `tts/` (o motor, grande) fica ignorada.
 
